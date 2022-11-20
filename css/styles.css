@@ -155,16 +155,17 @@ p {
 .button {
   font-family: "Roboto";
   cursor: pointer;
-  border-radius: 4px;
-}
-.hero-button {
-  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   color: var(--white-color);
   background-color: var(--active-color);
   border: none;
+  border-radius: 4px;
+}
+.hero-button {
+  padding: 10px 32px;
+  
 }
 
 /* Наші переваги */
@@ -418,6 +419,47 @@ p {
   padding-top: 12px;
 }
 
+.footer-form {
+  padding: 12px 0 0 93px;
+}
+
+.subscription-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color); 
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline-style: none;
+  background-color: transparent;
+}
+
+.footer-input::placeholder{
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.footer-button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+
+}
+
+
 /* Сторінка Портфоліо */
 
 .visually-hidden {
@@ -529,6 +571,8 @@ p {
   color: var(--white-color);
 }
 
+/* Модальне вікно */
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -555,8 +599,6 @@ p {
   transform: translate(-50%, -50%) rotate(0);
   transition: transform 300ms linear;
 }
-
-
 
 .modal .close-sign {
   position: absolute;
@@ -651,5 +693,63 @@ p {
 
 .modal-input:focus + .input-icon {
   fill: var(--active-color);
-  
 }
+
+.check-line {
+margin: 20px 0 30px;
+padding-left: 13px;
+
+}
+
+.checkbox-agree {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.checkbox-agree .icon-wrapper {
+  width: 16px;
+  height: 15px;
+  border: 1.8px solid var(--main-color);
+  border-radius: 1.7px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-agree .agree-icon {
+  fill: transparent;
+}
+
+.check-line input:checked + .checkbox-agree .icon-wrapper {
+  background-color:var(--active-color);
+  border: none;
+}
+
+.check-line input:checked + .checkbox-agree .agree-icon {
+  fill: var(--white-color);
+}
+
+.modal-button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  padding: 10px 52px;
+}
+
+.form-button {
+  padding-left: 124px;
+}
+
+.modal-link {
+  color: var(--active-color);
+}
+
+
+
