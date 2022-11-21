@@ -446,14 +446,20 @@ p {
   font-size: 14px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6)
+  color: rgba(255, 255, 255,);
 }
 
-.footer-input::placeholder{
+.footer-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255,);
+}
+
+.footer-input:focus-visible {
+  background-color: var(--white-color);
+  border-color: var(--white-color);
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-wrapper {
@@ -624,14 +630,12 @@ p {
   transition: transform 300ms linear;
 }
 
-.modal .close-sign {
+.close-sign {
   position: absolute;
   display: flex;
-  justify-content: center;
   cursor: pointer;
-  align-items: center;
-  top: 0;
-  right: 20px;
+  top: 8px;
+  right: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 9px 10px;
@@ -639,7 +643,11 @@ p {
 }
 
 .modal-icon {
-  color: var(--header-logo-color);
+  fill: var(--header-logo-color);
+}
+
+.close-sign:hover .modal-icon {
+  fill: var(--active-color);
 }
 
 .is-hidden {
@@ -677,7 +685,6 @@ p {
   transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .modal-label {
   display: block;
   font-size: 12px;
@@ -694,6 +701,12 @@ p {
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
+  outline-style: none;
+}
+
+.modal-textarea:focus-visible {
+  border-color: var(--active-color);
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
  
 .modal-textarea::placeholder {
